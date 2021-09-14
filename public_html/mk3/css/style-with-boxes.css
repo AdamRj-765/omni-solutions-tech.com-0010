@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+
+
+*, *:before, *:after {
+	border: 1px solid blue;		
+}
+
+#my-footer {
+	text-align: center;
+	height: 55px;
+}
+
+#my-footer-span {
+	style="font-family: Verdana;
+	font-size: 12px;
+	color: #6F6F6F;
+	height: 90px;
+}

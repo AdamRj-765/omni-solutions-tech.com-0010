@@ -1,0 +1,9 @@
+# robots.txt for https://omni-solutions-tech.net/
+
+
+User-Agent: *
+Disallow:
+
+
+
+Sitemap: https://omni-solutions-tech.net/sitemap.xml
