@@ -1,0 +1,110 @@
+@charset "UTF-8";
+
+
+/* DESIGN MODE YELLOW
+*, *:before, *:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	border: 1px solid yellow;
+}
+*/
+
+
+/* BASIC BROWSER RESET */
+* {
+	margin:0;
+	padding:0;
+}
+
+/* GLOBAL STYLING */
+body {
+	background-color:#f4f4f4;
+	color:#555555;
+	font: normal 16px Arial, Helvetica, sans-serif;
+	line-height: 1.6em;
+	margin:0;
+}
+
+ul {
+	margin:0;
+	padding:0;
+	color:#6895bc;
+}
+
+li {
+ color: #6895bc;
+}
+
+nav {
+	float:right;
+}
+/* HEADER-MAIN */
+header {
+	background:#1b333f;
+	color:#ffffff;
+	min-height:70px;
+	border-bottom:#3872a0 3px solid;
+}
+
+header a {
+	color:#ffffff;
+	text-decoration:none;
+	text-transform: uppercase;
+	font-size:16px;
+}
+
+header li {
+	float:left;
+	display:inline;
+	padding: 0 20px 0 20px;
+
+}
+
+header nav {
+	float:right;
+	margin-top:60px;
+	margin-bottom:0;
+}
+
+header .highlight, header .current a  {
+	color:#24618d;
+	font-weight:bold;
+
+}
+
+header a:hover {
+	color:#5e8ca6;
+	font-weight:bold;
+}
+
+a {
+	text-decoration:none;
+	color:#6895bc;
+}
+
+a:visited {
+
+}
+
+.logo {
+	width:340px;
+}
+
+/* CONTAINERS */
+.container {
+	width:80%;
+	margin:auto;
+	overflow:hidden;
+}
+
+.container-header {
+	width:100%;
+	margin:auto;
+	overflow:hidden;
+}
+
+#brandidng {
+	float:left;
+
+}
