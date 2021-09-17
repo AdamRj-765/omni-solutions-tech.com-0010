@@ -1,57 +1,93 @@
 @charset "UTF-8";
 
 
-/* DESIGN MODE YELLOW
+/* DESIGN MODE YELLOW */
 *, *:before, *:after {
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 	border: 1px solid yellow;
 }
-*/
+
 
 
 /* BASIC BROWSER RESET */
 * {
-	margin:0;
-	padding:0;
+	margin: 0;
+	padding: 0;
 }
 
-/* GLOBAL STYLING */
+
 body {
-	background-color:#f4f4f4;
-	color:#555555;
+	background-color: #f4f4f4;
+	color: #555555;
 	font: normal 16px Arial, Helvetica, sans-serif;
 	line-height: 1.6em;
-	margin:0;
+	margin: 0;
+}
+
+
+/* GLOBAL STYLING */
+
+.container {
+	width: 80%;
+	margin: auto;
+	overflow: hidden;
+}
+
+.container-header {
+	width: 100%;
+	margin: auto;
+	overflow: hidden;
+}
+
+.container h1 {
+	padding-top: 20px;
 }
 
 ul {
-	margin:0;
-	padding:0;
-	color:#6895bc;
+	margin: 0;
+	padding: 0;
+	color: #6895bc;
 }
 
-li {
- color: #6895bc;
+.button_1 {
+	height: 38px;
+	background: #6895bc;
+	border: 0;
+	padding-left: 20px;
+	padding-right: 20px;
+	color: #ffffff;
+
 }
 
-nav {
-	float:right;
+.dark {
+	padding: 15px;
+	background: #1b333f;
+	color: #ffffff;
+	margin-top: 10px;
+	margin-bottom: 10px;
 }
-/* HEADER-MAIN */
+
+/* HEADER */
+
 header {
-	background:#1b333f;
-	color:#ffffff;
-	min-height:70px;
-	border-bottom:#3872a0 3px solid;
+	background: #1b333f;
+	color: #ffffff;
+	min-height: 70px;
+	border-bottom: #24618d 5px solid;
 }
 
 header a {
-	color:#ffffff;
-	text-decoration:none;
+	color: #ffffff;
+	text-decoration: none;
 	text-transform: uppercase;
-	font-size:16px;
+	font-size: 16px;
+}
+
+header a:hover {
+	color:#5e8ca6;
+	font-weight:bold;
 }
 
 header li {
@@ -59,6 +95,19 @@ header li {
 	display:inline;
 	padding: 0 20px 0 20px;
 
+}
+
+
+/* BRANDING */
+
+#brandidng {
+	float:left;
+
+}
+
+
+.logo {
+	width:350px;
 }
 
 header nav {
@@ -73,10 +122,8 @@ header .highlight, header .current a  {
 
 }
 
-header a:hover {
-	color:#5e8ca6;
-	font-weight:bold;
-}
+/* NAVBAR */
+
 
 a {
 	text-decoration:none;
@@ -87,24 +134,33 @@ a:visited {
 
 }
 
-.logo {
-	width:340px;
+/* SHOWCASE */
+
+#showcase {
+	min-height: 250px;
+	background: url("../images/showcase.jpg") no-repeat 0 -1px;
+	text-align: center;
+	color: #ffffff;
 }
 
-/* CONTAINERS */
-.container {
-	width:80%;
-	margin:auto;
-	overflow:hidden;
+#showcase h1 {
+	margin-top: 60px;
+	font-size: 60px;
+	margin-bottom: 25px;
 }
 
-.container-header {
-	width:100%;
-	margin:auto;
-	overflow:hidden;
+#showcase h2 {
+	font-size: 20px;
+	margin-top: 40px;
 }
 
-#brandidng {
-	float:left;
+
+
+/* Media Querries */
+
+@media(max-width:1002px) {
+	body {
+		display:none;
+	}
 
 }
