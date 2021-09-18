@@ -18,11 +18,12 @@
 }
 
 body {
+	font: normal 16px Arial, Helvetica, sans-serif;
+	padding: 0;
+	margin: 0;
 	background-color: #f4f4f4;
 	color: #555555;
-	font: normal 16px Arial, Helvetica, sans-serif;
 	line-height: 1.6em;
-	margin: 0;
 }
 
 /* GLOBAL STYLING */
@@ -136,6 +137,7 @@ a:visited {
 	background: url("../images/showcase.jpg") no-repeat 0 -1px;
 	text-align: center;
 	color: #ffffff;
+	border-bottom: #24618d 5px solid;
 }
 
 #showcase h1 {
@@ -149,10 +151,139 @@ a:visited {
 	margin-top: 40px;
 }
 
-/* Media Querries */
+/* NEWSLETTER */
 
-@media(max-width: 991px) {
-	* {
-		display:none;
+#newsletter {
+	padding: 15px;
+	color: #ffffff;
+	background-color: #1b333f;
+}
+
+#newsletter h1 {
+	float:left;
+}
+
+#newsletter form {
+	float: right;
+	margin-top: 15px;
+}
+
+#newsletter input[type="email"] {
+	padding: 4px;
+	height: 25px;
+	width: 250px;
+
+}
+
+/* BOXES */
+
+#boxes {
+	margin-top: 20px;
+}
+
+#boxes .box {
+	float: left;
+	text-align: center;
+	width: 30%;
+	padding: 10px;
+}
+
+#boxes .box img {
+	width: 90px;
+
+}
+
+/* SIDEBAR */
+
+aside#sidebar {
+	float:right;
+	width: 30%;
+	margin-top: 40px;
+}
+
+aside#sidebar .quote input, aside#sidebar .quote textarea  {
+	width: 90%;
+	padding: 5px;
+
+}
+
+/* MAIN-COL */
+
+article#main-col {
+	float: left;
+	width: 65%;
+}
+
+#main {
+	margin-top: 30px;
+		float: left;
+		width: 65%;
+}
+
+/* SERVICES */
+
+ul#services li {
+	list-style: none;
+	padding: 20px;
+	border: #cccccc solid 1px;
+	margin-bottom: 5px;
+	background: #e6e6e6;
+
+}
+
+footer {
+	padding: 20px;
+	margin-top: 20px;
+	color: #ffffff;
+	background-color: #1b333f;
+	text-align: center;
+}
+
+/* MEDIA QUERRIES */
+
+@media(max-width: 1010px) {
+		#showcase h1 {
+			margin-top: 40px;
+    	font-size: 40px;
+    	margin-bottom: 25px;
+	}
+}
+
+@media(max-width: 768px) {
+	header .container-header
+	header #branding,
+	header nav,
+	header nav li,
+	#newsletter h1,
+	#newsletter form,
+	#boxes .box,
+	article#main-col,
+	aside#sidebar  {
+		float: none;
+		text-align: center;
+		width: 100%;
+	}
+
+	#showcase h1 {
+		margin-top: 40px;
+		line-height: 1.6em;
+	}
+	#showcase h2 {
+		padding-bottom: 20px;
+	}
+	#newsletter button, .quote button {
+		display: block;
+		width: 100%;
+	}
+	#newsletter form input[type="email"], .quote input, .quote textarea {
+		width: 100%;
+		margin-bottom: 5px;
+	}
+}
+
+
+@media(max-width: 665px) {
+	header nav,
+	header nav li {
 	}
 }
