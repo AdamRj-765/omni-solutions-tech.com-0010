@@ -220,6 +220,17 @@ article#main-col {
 		width: 65%;
 }
 
+#sidebar h2{
+	padding: 10px;
+
+
+}
+
+#sidebar ul {
+	padding: 15px;
+	margin-left: 15px;
+}
+
 /* SERVICES */
 
 ul#services li {
