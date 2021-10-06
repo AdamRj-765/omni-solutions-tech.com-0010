@@ -177,9 +177,19 @@ a:visited {
 
 /* BOXES */
 
-#boxes {
-	margin-top: 20px;
+.box img {
+	margin-bottom: 20px;
 }
+
+.box h3 {
+	padding: 10px;
+}
+
+#boxes {
+	margin-top: 10px;
+}
+
+
 
 #boxes .box {
 	float: left;
