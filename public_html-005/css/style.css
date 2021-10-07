@@ -230,10 +230,12 @@ article#main-col {
 		width: 65%;
 }
 
+#biopic {
+    border-radius: 50%;
+}
+
 #sidebar h2{
 	padding: 10px;
-
-
 }
 
 #sidebar ul {
