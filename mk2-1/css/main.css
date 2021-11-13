@@ -7,3 +7,88 @@
 	padding: 0;
 	margin: 0;
 }
+
+/* DESIGN MODE YELLOW */
+*, *:before, *:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	border: 1px solid yellow;
+}
+
+
+
+
+#branding {
+	float:left;
+}
+
+.logo {
+	width:350px;
+	max-width: 100%;
+}
+
+.container-header {
+	width: 100%;
+	margin: auto;
+	overflow: hidden;
+}
+
+header nav {
+	float:right;
+	margin-top:20px;
+	margin-bottom:0;
+}
+
+nav {
+	float:right;
+	width: 70%;
+}
+
+.navbar {
+	float: right;
+
+}
+
+
+/* from: https://stackoverflow.com/questions/18777235/center-content-in-responsive-bootstrap-navbar
+This set of @media selectors centers the items of the navbar then at 1052px display goes to flex which makes the items stack on themeselves instead of stacking the line and moves the image below it down just enough to make room for the nav expansion. Nex at 899px the navbar changes from flex to regular line stack which expands the nav bar more and the image moves down at that time as well. Next at 767px the the entire bar collapses and the image moves back up to the navbar's original size.
+*/
+
+@media (min-width: 768px) {
+    .navbar .navbar-nav {
+        display: inline-block;
+        float: right;
+        vertical-align: top;
+    }
+
+	.navbar .navbar-collapse {
+    	text-align: right;
+    }
+
+
+}
+
+@media (max-width: 1052px) {
+	.navbar .navbar-nav {
+        display: flex;
+        float: right;
+        vertical-align: top;
+    }
+
+	.navbar .navbar-collapse {
+    	text-align: right;
+    }
+}
+
+@media (max-width: 899px) {
+    .navbar .navbar-nav {
+        display: inline-block;
+        float: none;
+        vertical-align: top;
+    }
+
+    .navbar .navbar-collapse {
+        text-align: right;
+    }
+}
