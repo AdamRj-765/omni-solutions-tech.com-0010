@@ -3,14 +3,21 @@
 <html lang="en-US" class="no-js" dir="ltr">
 <head>
 	<meta charset="UTF-8" />
-	<title>Omni-Solutions Tech | IT Consulting Web Services Tech Support</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>Omni-Solutions Tech | IT Consulting Web Services Tech Support</title>
 	<meta name="description" content="Providing Consultanting, Web Services, Cloud Solutions, and Helpdesk Support as well as an array of IT services. We execute strategies that drive business growth to business and home users.">
 	<meta name="keywords" content="consulting, web, services, cloud, solutions,  helpdesk support, IT, services, computer, tech, solutions">
 	<meta name="author" content="Adam Rodriguez">
 	<link rel="stylesheet"  type="text/css" href="css/main.css">
-	<link href="css/bootstrap/bootstrap.min.css" rel="stylesheet" media="screen">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link href="css/bootstrap-5.1.3/bootstrap.min.css" rel="stylesheet" media="screen">
+	<!-- old bootstrap
+	<link href="css/bootstrap/bootstrap.min.css" rel="stylesheet" media="screen"> -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+	<!-- [if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<!-- [endif]>
+
 	<!-- UNCOMMENT the below code after going live.-->
 	<!-- <base href="https://omni-solutions-tech.net/" /> -->
 	<link rel="canonical" href="https://omni-solutions-tech.net/index.html">
@@ -31,36 +38,52 @@
 <body>
 	<header>
 
-		
+
 		<div class="container-header">
 			<div id="branding">
 					<a href="index.html"><img class="logo" alt="Omni-Solutions Technology" src="img/logo.png">
 					</a>
 			</div>
-
-
-
-			<nav class="navbar navbar-inverse navbar-fixed-top">
-				<div class="container-fluid">
-					<div class="navbar-header">
-						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-						</button>
-					</div>
-					<div class="collapse navbar-collapse" id="myNavbar">
-						<ul class="nav navbar-nav">
-							<li class="active"><a href="/index.html">Home</a></li>
-							<li><a href="/about.html">About US</a></li>
-							<li><a href="/services.html">Services</a></li>
-							<li><a href="/contact.php">Contact Us</a></li>
-							<li><a href="/">Blog</a></li>
-						</ul>
-					</div>
-				</div>
-			</nav>
 		</div>
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled">Disabled</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+
+
+
 
 
 
