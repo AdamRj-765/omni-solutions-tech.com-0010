@@ -1,5 +1,6 @@
 @charset "UTF-8";
 
+/* BASIC BROWSER RESET */
 *, *:before, *:after {
 	box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -17,30 +18,29 @@
 }
 */
 
-/* BASIC BROWSER RESET */
-* {
-	margin: 0;
-	padding: 0;
-}
-
 body {
-	font: normal 16px Arial, Helvetica, sans-serif;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	line-height: 1.5;
+	/* Same as above
+	font: 15px/1.5 Arial, Helvetica, sans-serif; */
 	padding: 0;
 	margin: 0;
 	background-color: #f4f4f4;
 	color: #555555;
-	line-height: 1.6em;
+
 }
 
 /* GLOBAL STYLING */
-
 .container {
 	width: 80%;
 	margin: auto;
 	overflow: hidden;
 }
 
-.container-header {
+/* HEADER */
+header {
+	background: #35424a;
 }
 
 .container h1 {
@@ -56,4 +56,11 @@ body {
 	width:305px;
 	max-width: 100%;
 	background-color: #212529;
+}
+
+
+footer {
+		width: 80%;
+		margin: auto;
+		overflow: hidden;
 }
