@@ -38,13 +38,25 @@ body {
 	overflow: hidden;
 }
 
-/* HEADER */
-header {
-	background: #35424a;
-}
-
 .container h1 {
 	padding-top: 20px;
+}
+
+/* HEADER */
+header {
+	background: #212529;
+	min-height: 70px;
+
+}
+
+
+#showcase {
+	min-height: 400px;
+	text-align:center;
+	color: #ffffff;
+	border-bottom: #e8491d 3px solid;
+	background:url('../images/showcase.jpg') no-repeat 0 -400px;
+
 }
 
 #branding {
