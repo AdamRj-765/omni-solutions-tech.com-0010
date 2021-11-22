@@ -41,7 +41,7 @@ body {
 .button_1 {
 	height: 38px;
 	background: #2c5d80;
-	border: none;
+	border: 0;
 	padding-left: 20px;
 	padding-right: 20px;
 	color: #ffffff;
@@ -98,6 +98,7 @@ header {
 #newsletter h1 {
 	float: left;
 	margin-top: 0px;
+	font-size: 35px;
 }
 
 #newsletter form {
@@ -112,9 +113,29 @@ header {
 
 }
 
+/* BOXES */
 
+#boxes {
+	margin-top: 60px;
+}
+
+#boxes .box {
+	float: left;
+	width: 30%;
+	padding: 10px;
+	text-align: center;
+}
+
+#boxes .box img {
+	width: 100px;
+}
+
+.main {
+	margin: 80px
+}
 
 footer {
+		text-align: center;
 		width: 80%;
 		margin: auto;
 		overflow: hidden;
