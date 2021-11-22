@@ -127,16 +127,19 @@ header {
 }
 
 #boxes .box img {
-	width: 100px;
+	width: 60px;
 }
 
-.main {
-	margin: 80px
+#main {
+	padding: 40px;
 }
 
 footer {
-		text-align: center;
-		width: 80%;
-		margin: auto;
-		overflow: hidden;
+	padding: 20px;
+	margin-top: 20px;
+	color: #ffffff;
+	background-color: #212529;
+	text-align: center;
+	margin: auto;
+	overflow: hidden;
 }
