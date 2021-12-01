@@ -135,11 +135,25 @@ header {
 }
 
 footer {
+	font-family: Verdana;
+	font-size: 12px;
 	padding: 20px;
 	margin-top: 20px;
-	color: #ffffff;
+	height: 90px;
 	background-color: #212529;
 	text-align: center;
 	margin: auto;
 	overflow: hidden;
+}
+
+.copyright {
+	height: 85px;
+	margin-bottom: 0px;
+	color: #ffffff;
+
+}
+
+.do-link {
+	color: #ffffff;
+	text-decoration: none;
 }
