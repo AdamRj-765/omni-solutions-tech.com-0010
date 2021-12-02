@@ -4,9 +4,9 @@
 /* Comment the below block to use the design mode below */
 /* */
 *, *:before, *:after {
-	box-sizing: border-box; 
-	-moz-box-sizing: border-box; 
-	-webkit-box-sizing: border-box; 
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
 	padding: 0;
 	margin: 0;
 }
@@ -14,11 +14,11 @@
 
 /* Use this block for designing your site. */
 /* Uncomment it out to use design mode */
-/* 
+/*
 *, *:before, *:after {
-	box-sizing: border-box; 
-	-moz-box-sizing: border-box; 
-	-webkit-box-sizing: border-box; 
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
 	border: 1px solid gray;
 	margin: .2%;
 	padding: .2%;
@@ -29,7 +29,7 @@ html, body {
   min-height: 100%;
   margin: 0;
   padding: 0;
-} 
+}
 
 body {
   width: 100%;
@@ -50,7 +50,7 @@ body {
 }
 
 header, section, footer, aside, nav, main, article, figure, figcaption, details, hgroup, menu, summary{
-    display: block; 
+    display: block;
 }
 
 img {
@@ -91,9 +91,9 @@ img {
 
 /* This controls the contents centering */
 p.sansserif {
-    font-family: "geomanist", "poppins", "montserrat", Helvetica, Arial, sans-serif; 
+    font-family: "geomanist", "poppins", "montserrat", Helvetica, Arial, sans-serif;
     margin: 0 auto;
-	width: auto; 
+	width: auto;
 	text-align: center;
   }
 
@@ -146,7 +146,7 @@ p.copyright {
 
 }
 
-/* When the screen is less than 780 pixels wide, hide all list items, except for the first one ("Home"). Show the list 
+/* When the screen is less than 780 pixels wide, hide all list items, except for the first one ("Home"). Show the list
 item that contains the link to open and close the topnav (li.icon) */
 @media screen and (max-width:1051px) {
   .img-fluid {
@@ -165,7 +165,7 @@ item that contains the link to open and close the topnav (li.icon) */
   		margin-top: 101px;
 	  }
   }
- 
+
 @media screen and (max-width:767px) {
   .img-fluid {
   		margin-top: 51px;
@@ -176,7 +176,7 @@ item that contains the link to open and close the topnav (li.icon) */
 
 /* from: https://stackoverflow.com/questions/18777235/center-content-in-responsive-bootstrap-navbar
 This set of @media selectors centers the items of the navbar then at 1052px display goes to flex which makes the items stack on themeselves
-instead of stacking the line and moves the image below it down just enough to make room for the nav expansion. Nex at 899px the navbar 
+instead of stacking the line and moves the image below it down just enough to make room for the nav expansion. Nex at 899px the navbar
 changes from flex to regular line stack which expands the nav bar more and the image moves down at that time as well. Next at 767px the
 the entire bar collapses and the image moves back up to the navbar's original size.
 */
@@ -266,7 +266,7 @@ span {
 body {
   font-family: "geomanist", "poppins", "montserrat", Helvetica, Arial, sans-serif;
   }
-sub { 
+sub {
     vertical-align: sub;
     font-size: 10px;
 }
@@ -343,7 +343,7 @@ img {
 
 /*
 .copyright {
-  font-family: Verdana; 
+  font-family: Verdana;
   font-size: 12px;
   color: #6F6F6F;
   }
@@ -400,7 +400,7 @@ body {
 */
 
 /*
-sub { 
+sub {
     vertical-align: sub;
     font-size: 10px;
 }
@@ -507,7 +507,7 @@ ul.topnav li a:hover {background-color: #555;}
 /* Hide the list item that contains the link that should open and close the topnav on small screens */
 /*
 ul.topnav li.icon {display: none;}
-/* When the screen is less than 780 pixels wide, hide all list items, except for the first one ("Home"). Show the list 
+/* When the screen is less than 780 pixels wide, hide all list items, except for the first one ("Home"). Show the list
 item that contains the link to open and close the topnav (li.icon) */
 
 /*
@@ -518,7 +518,7 @@ item that contains the link to open and close the topnav (li.icon) */
     display: inline-block;
   }
 
-/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes 
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes
 the topnav look good on small screens */
 /*
 @media screen and (max-width:780px) {
@@ -544,8 +544,8 @@ the topnav look good on small screens */
     text-align: left;
   }
   a:link {
-    color: black; 
-    background-color: transparent; 
+    color: black;
+    background-color: transparent;
     text-decoration: none;
   }
 

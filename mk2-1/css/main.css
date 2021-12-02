@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Roboto:wght@100&display=swap');
+
 /* BASIC BROWSER RESET */
 *, *:before, *:after {
 	box-sizing: border-box;
@@ -19,7 +21,8 @@
 */
 
 body {
-	font-family: Arial, Helvetica, sans-serif;
+	/* font-family: Arial, Helvetica, sans-serif; */
+	font-family: 'Lato';
 	font-size: 15px;
 	line-height: 1.5;
 	/* Same as above
@@ -149,11 +152,11 @@ footer {
 .copyright {
 	height: 85px;
 	margin-bottom: 0px;
-	color: #ffffff;
+	color: #2c5d80;
 
 }
 
 .do-link {
-	color: #ffffff;
+	color: #2c5d80;
 	text-decoration: none;
 }
