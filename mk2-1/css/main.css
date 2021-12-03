@@ -52,6 +52,15 @@ body {
 	color: #ffffff;
 }
 
+.button_2 {
+	height: 38px;
+	background: #212529;
+	border: 0;
+	padding-left: 20px;
+	padding-right: 20px;
+	color: #ffffff;
+}
+
 .dark {
 	padding: 15px;
 	background: #2c5d80;
@@ -73,7 +82,7 @@ header {
 
 #branding {
 	float:left;
-	background-color: black;
+	background-color: #212529;
 }
 
 .logo {
@@ -164,6 +173,21 @@ article#main-col {
 
 }
 
+aside#sidebar .quote input, aside#sidebar .quote textarea {
+	width: 90%;
+	padding: 5px;
+
+}
+
+/* Services */
+ul#services li {
+	list-style: none;
+	padding: 20px;
+	border: #cccccc solid 1px;
+	margin-bottom: 5px;
+	background: #e6e6e6e6;
+}
+
 footer {
 	font-family: Verdana;
 	font-size: 12px;
@@ -186,4 +210,22 @@ footer {
 .do-link {
 	color: #2c5d80;
 	text-decoration: none;
+}
+
+@media(max-width: 768px) {
+	/*
+	body {
+		display: none;
+	} */
+	header #branding {
+		float: none;
+		text-align: center;
+		width: 100%;
+		background: #212529;
+	}
+	.logo {
+		width:100%;
+		max-width: 100%;
+		background-color: #212529;
+	}
 }
