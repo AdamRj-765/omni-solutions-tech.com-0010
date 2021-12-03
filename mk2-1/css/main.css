@@ -52,6 +52,14 @@ body {
 	color: #ffffff;
 }
 
+.dark {
+	padding: 15px;
+	background: #2c5d80;
+	color: #ffffff;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
 .container h1 {
 	padding-top: 20px;
 }
@@ -136,7 +144,7 @@ nav {
 }
 
 #boxes .box img {
-	width: 60px;
+	width: 90px;
 }
 
 #main {
@@ -144,10 +152,16 @@ nav {
 }
 
 /*Sidebar*/
-aside #sidebar {
+aside#sidebar {
 	float: right;
 	width: 30%;
 	margin-top: 10px;
+}
+
+article#main-col {
+	float: left;
+	width: 65%;
+
 }
 
 footer {
