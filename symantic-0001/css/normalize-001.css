@@ -1,0 +1,8 @@
+/* NORMALIZE CSS FILE - Small CSS file that provides cross-browser consistency in the default styling of HTML elements.
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
