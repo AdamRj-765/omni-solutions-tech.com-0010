@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+/* BASIC BROWSER RESET
+*, *:before, *:after {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+*/
+
+/* DESIGN MODE YELLOW
+*, *:before, *:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	border: 1px solid yellow;
+}
+*/
+
+/* SIMPLE DESIGN MODE */
+*, *:before, *:after {
+	box-sizing: border-box;
+	border: 1px solid grey;
+}
+
+body {
+	/* padding: 2rem 5rem; */
+}

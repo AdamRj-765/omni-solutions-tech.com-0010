@@ -1,0 +1,586 @@
+@charset "UTF-8";
+
+/* Use this for regular viewing of the site */
+/* Comment the below block to use the design mode below */
+/* */
+*, *:before, *:after {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+/* */
+
+/* Use this block for designing your site. */
+/* Uncomment it out to use design mode */
+/*
+*, *:before, *:after {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	border: 1px solid gray;
+	margin: .2%;
+	padding: .2%;
+}
+*/
+
+html, body {
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  /* margin: 0 auto; */
+  /* margin: 1.5em; */
+  /* padding: 0 1em; */
+  font-size: 1.2rem;
+  /* font-size: 14px; */
+  background-color: #ddd;
+  line-height: 1.42857143;
+  /* line-height: 140%; */
+  color: #333;
+  background-color: #fff;
+  -webkit-font-smoothing: antialiased;
+  /* font-family: sans-serif; */
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  /* font-family: "geomanist", "poppins", "montserrat", Helvetica, Arial, sans-serif; */
+}
+
+header, section, footer, aside, nav, main, article, figure, figcaption, details, hgroup, menu, summary{
+    display: block;
+}
+
+img {
+	width: 100%;
+	height: auto;
+}
+
+
+
+
+
+.banner {
+	width: 100%;
+    height: auto;
+
+}
+
+.img-fluid {
+	min-width:100%;
+	margin-top: 51px;
+	border:0px;
+
+}
+
+.main-body {
+
+}
+
+.sansserif {
+
+}
+
+.center-hr {
+	width:40%;
+	text-align:center;
+}
+
+
+/* This controls the contents centering */
+p.sansserif {
+    font-family: "geomanist", "poppins", "montserrat", Helvetica, Arial, sans-serif;
+    margin: 0 auto;
+	width: auto;
+	text-align: center;
+  }
+
+/* This controls only the bottom of the page */
+#main-body {
+	display:block;
+    width: 95%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+body span {
+    display:block;
+    width: 95%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+
+#veranda {
+	font-family: Verdana;
+}
+
+#veranda-dark {
+	font-family: Verdana;
+	color: #2A6793;
+}
+
+.footer {
+	height: 55px;
+}
+
+span.copyright {
+	 font-family: Verdana;
+	 font-size: 12px;
+	 color: #6F6F6F;
+	 height: 90px;
+}
+
+
+
+p.copyright {
+	height: 85px;
+	margin-bottom: 0px;
+}
+
+.sponsor-line {
+
+}
+
+/* When the screen is less than 780 pixels wide, hide all list items, except for the first one ("Home"). Show the list
+item that contains the link to open and close the topnav (li.icon) */
+@media screen and (max-width:1051px) {
+  .img-fluid {
+  		margin-top: 51px;
+	  }
+  }
+
+@media screen and (max-width:953px) {
+  .img-fluid {
+  		margin-top: 71px;
+	  }
+  }
+
+  @media screen and (max-width:899px) {
+  .img-fluid {
+  		margin-top: 101px;
+	  }
+  }
+
+@media screen and (max-width:767px) {
+  .img-fluid {
+  		margin-top: 51px;
+	  }
+  }
+
+
+
+/* from: https://stackoverflow.com/questions/18777235/center-content-in-responsive-bootstrap-navbar
+This set of @media selectors centers the items of the navbar then at 1052px display goes to flex which makes the items stack on themeselves
+instead of stacking the line and moves the image below it down just enough to make room for the nav expansion. Nex at 899px the navbar
+changes from flex to regular line stack which expands the nav bar more and the image moves down at that time as well. Next at 767px the
+the entire bar collapses and the image moves back up to the navbar's original size.
+*/
+
+@media (min-width: 768px) {
+    .navbar .navbar-nav {
+        display: inline-block;
+        float: none;
+        vertical-align: top;
+    }
+
+	.navbar .navbar-collapse {
+    	text-align: center;
+    }
+
+
+}
+
+@media (max-width: 1052px) {
+	.navbar .navbar-nav {
+        display: flex;
+        float: none;
+        vertical-align: top;
+    }
+
+	.navbar .navbar-collapse {
+    	text-align: center;
+    }
+}
+
+@media (max-width: 899px) {
+    .navbar .navbar-nav {
+        display: inline-block;
+        float: none;
+        vertical-align: top;
+    }
+
+    .navbar .navbar-collapse {
+        text-align: left;
+    }
+}
+
+/* Added this to meke the fonts work */
+@font-face {
+    font-family: geomanist;
+    src: local(geomanist), url('fonts/geomanist-regular-webfont.ttf') format('opentype');
+}
+@font-face {
+    font-family: poppins;
+    src: local(poppins), url('fonts/Poppins-Regular.ttf') format('opentype');
+}
+@font-face {
+    font-family: montserrat;
+    src: local(montserrat), url('fonts/Montserrat-Regular.otf') format('opentype');
+}
+
+/* This allows the dark band to be around the copyright */
+footer {
+    margin: 0 auto;
+    height: 46px;
+    background-color: #333;
+    /*background-color: #1e2127;*/
+    /*background-color: #333;*/
+    /*background-color: #292929;*/
+    /*background-color: #2F2F2F;*/
+    color: #ffffff;
+    font-size: 10px;
+}
+footer span {
+    display:block;
+    width: 95%;
+    margin: 0 auto;
+    text-align: center;
+}
+body span {
+    display:block;
+    width: 95%;
+    margin: 0 auto;
+    text-align: center;
+}
+span {
+    display:block;
+    width: 95%;
+    margin: 0 auto;
+    text-align: center;
+}
+body {
+  font-family: "geomanist", "poppins", "montserrat", Helvetica, Arial, sans-serif;
+  }
+sub {
+    vertical-align: sub;
+    font-size: 10px;
+}
+
+
+/* ================================================================  OLD CSS ======================== */
+
+/*
+.center-text {
+  text-align: center;
+}
+*/
+
+/*
+img.scalable {
+  height: auto !important;
+  width: auto !important;
+  max-width: 100%;
+}
+*/
+
+/*
+img.itemprop {
+  margin-top: 101px;
+  margin-bottom: 0px;
+  margin-right: 0px;
+  margin-left: 0px;
+}
+*/
+
+/*
+#biopic {
+  border-radius: 50%;
+}
+*/
+
+/*
+fb-bottom {
+    display:block;
+    width: 10%;
+    margin: 0 auto;
+    text-align: center;
+}
+*/
+
+/*
+@font-face {
+    font-family: geomanist;
+    src: local(geomanist), url('fonts/geomanist-regular-webfont.ttf') format('opentype');
+}
+*/
+
+
+/*
+@font-face {
+    font-family: poppins;
+    src: local(poppins), url('fonts/Poppins-Regular.ttf') format('opentype');
+}
+@font-face {
+    font-family: montserrat;
+    src: local(montserrat), url('fonts/Montserrat-Regular.otf') format('opentype');
+}
+
+
+/* ============ normal make images responsive */
+
+/*
+img {
+    width: 100%;
+    height: auto;
+}
+*/
+
+
+/*
+.copyright {
+  font-family: Verdana;
+  font-size: 12px;
+  color: #6F6F6F;
+  }
+*/
+
+
+/* This allows the dark band to be around the copyright */
+
+/*
+footer {
+    margin: 0 auto;
+    height: 46px;
+    background-color: #333;
+    /*background-color: #1e2127;*/
+    /*background-color: #333;*/
+    /*background-color: #292929;*/
+    /*background-color: #2F2F2F;*/
+/*    color: #ffffff;
+/*    font-size: 10px;
+}
+*/
+
+/*
+footer span {
+    display:block;
+    width: 95%;
+    margin: 0 auto;
+    text-align: center;
+}
+*/
+
+/*
+body span {
+    display:block;
+    width: 95%;
+    margin: 0 auto;
+    text-align: center;
+}
+*/
+
+/*
+span {
+    display:block;
+    width: 95%;
+    margin: 0 auto;
+    text-align: center;
+}
+*/
+
+/*
+body {
+  font-family: "geomanist", "poppins", "montserrat", Helvetica, Arial, sans-serif;
+}
+*/
+
+/*
+sub {
+    vertical-align: sub;
+    font-size: 10px;
+}
+*/
+
+/*
+#banner {
+    width: 100%;
+    height: 100px;
+}
+*/
+
+/*
+#quote_container {
+    margin-top:30px;
+    padding-left:5%;
+    padding-right:5%;
+}
+*/
+
+
+/*
+#quote_content {
+  max-width:740px;
+  color: #2A6793;
+  margin:auto;
+}
+*/
+
+/*
+#website {
+    width: 100%;
+    height: auto;
+    padding: 0 1px;
+    border-color: black;
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-top-style: solid;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    border-color: black;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+    border-left-width: 0px;
+    border-top-style: solid;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-left-style: solid;
+}
+/*
+
+
+/* Remove margins and padding from the list, and add a black background color */
+/*
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+/* Float the list items side by side */
+/*
+ul.topnav li {float: left;}
+/* Style the links inside the list items */
+/*
+ul.topnav li a {
+    display: inline-block;
+    font-family: "geomanist", "poppins", "montserrat", Helvetica, Arial, sans-serif;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+}
+ul.sansserif {
+    display: inline-block;
+    font-family: "geomanist", "poppins", "montserrat", Helvetica, Arial, sans-serif;
+    color: #2A6793;
+    text-align: left;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+}
+p.sansserif {
+    font-family: "geomanist", "poppins", "montserrat", Helvetica, Arial, sans-serif; margin: 0 auto;
+width: auto; text-align: center;
+  }
+/*
+p.wrap {
+margin: 0 auto;
+width: 1140px;
+}
+*/
+/* Change background color of links on hover */
+/*
+ul.topnav li a:hover {background-color: #555;}
+/* Hide the list item that contains the link that should open and close the topnav on small screens */
+/*
+ul.topnav li.icon {display: none;}
+/* When the screen is less than 780 pixels wide, hide all list items, except for the first one ("Home"). Show the list
+item that contains the link to open and close the topnav (li.icon) */
+
+/*
+@media screen and (max-width:1046px) {
+  ul.topnav li:not(:first-child) {display: none;}
+  ul.topnav li.icon {
+    float: right;
+    display: inline-block;
+  }
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes
+the topnav look good on small screens */
+/*
+@media screen and (max-width:780px) {
+  ul.topnav.responsive {position: relative;}
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+/*@media only screen and (max-width: 600px) {
+    body {
+        background-color: lightblue;
+    }
+}*/
+
+/*
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+  }
+  a:link {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+  }
+
+  a:visited {
+      color: red;
+      background-color: transparent;
+      text-decoration: none;
+  }
+
+  a:hover {
+      color: red;
+      background-color: transparent;
+      text-decoration: underline;
+  }
+
+  a:active {
+      color: yellow;
+      background-color: transparent;
+      text-decoration: underline;
+  }
+}
+
+
+  #banner {
+    margin-top:101px;
+  }
+}
+@media screen and (max-width:1052px) {
+  #banner {
+    margin-top:767px;
+  }
+}
+@media screen and (max-width:780px) {
+  #banner {
+    margin-top:101px;
+  }
+}
+*/
